@@ -1,0 +1,42 @@
+.smallPic {
+    width: 420px;
+    float: left;
+    position: relative;
+    cursor: move;//鼠标变成十字形
+}
+
+.smallPic img {
+    width: 100%;
+    display: block;//为了防止行内元素图片产生空白行
+}
+
+.smallPic .preview {
+    width: 100px;
+    height: 100px;
+    border: 1px #fff dashed;
+    background-color: #ccc;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.bigPicArea {
+    width: 500px;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: none;
+    position: relative;
+}
+.bigPicArea img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
